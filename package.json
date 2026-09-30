@@ -1,0 +1,32 @@
+{
+  "name": "@pipeworx/mcp-sec-financial-statements",
+  "version": "0.1.0",
+  "description": "SEC Financial Statement & Notes data sets — dimensional facts + note text.",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "bin": {
+    "mcp-sec-financial-statements": "bin/cli.js"
+  },
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "sec-financial-statements"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pipeworx-io/mcp-sec-financial-statements.git"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0",
+    "tsx": "^4.19.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3",
+    "@cloudflare/workers-types": "^4.20260405.1"
+  },
+  "pipeworx": {
+    "sourceHash": "v1-608e16c92af509ebd6f0d3f7b44a5a10845755dd3585090dd1be574fd6f4e352",
+    "sourceCommit": "658bedc4e66c6eab7e17c569f81012a2ee312624"
+  }
+}
