@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-sec-financial-statements",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "SEC Financial Statement & Notes data sets — dimensional facts + note text.",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-sec-financial-statements": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "sec-financial-statements"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-sec-financial-statements.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/sec-financial-statements",
   "pipeworx": {
-    "sourceHash": "v1-608e16c92af509ebd6f0d3f7b44a5a10845755dd3585090dd1be574fd6f4e352",
-    "sourceCommit": "658bedc4e66c6eab7e17c569f81012a2ee312624"
+    "mode": "gateway",
+    "slug": "sec-financial-statements",
+    "gatewaySlug": "sec-financial-statements",
+    "sourceHash": "v1-bbf018f514a2967ff8e5a139f0a744d41b64e5cd069e2774c01482fa0602c184",
+    "sourceCommit": "6bae4cfa7b6a73bbe014dc8820a19c80c842b21e"
   }
 }
